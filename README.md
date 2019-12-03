@@ -20,7 +20,7 @@ The library uses [ng-packagr](https://github.com/dherges/ng-packagr) to transpil
 
 ## Installation
 ```bash
-npm install ng2-dnd --save
+npm install @advisorstream/ng2-dnd --save
 ```
 
 ## Demo
@@ -42,7 +42,7 @@ System.config({
 - Import the `style.css` into your web page from `node_modules/ng2-dnd/bundles/style.css`
 
 #### 2. Import the `DndModule`
-Import `DndModule.forRoot()` in the NgModule of your application. 
+Import `DndModule.forRoot()` in the NgModule of your application.
 The `forRoot` method is a convention for modules that provide a singleton service.
 
 ```ts
@@ -61,7 +61,7 @@ export class AppModule {
 }
 ```
 
-If you have multiple NgModules and you use one as a shared NgModule (that you import in all of your other NgModules), 
+If you have multiple NgModules and you use one as a shared NgModule (that you import in all of your other NgModules),
 don't forget that you can use it to export the `DndModule` that you imported in order to avoid having to import it multiple times.
 
 ```ts
@@ -726,7 +726,7 @@ export class SimpleFormArraySortableComponent {
 
 ## How to pass multiple data in dragData while dragging ?
 
-1) As an array: 
+1) As an array:
 
 ``` html
 [dragData]="[aComponent,'component-in-bar']"
@@ -734,12 +734,12 @@ export class SimpleFormArraySortableComponent {
 
 ``` javascript
 loadComponent($event){
-    console.log($event.dragData[0]); // aComponent 
-    console.log($event.dragData[1]); // 'component-in-bar' OR 'component-in-designer' 
+    console.log($event.dragData[0]); // aComponent
+    console.log($event.dragData[1]); // 'component-in-bar' OR 'component-in-designer'
 }
 ```
 
-2) As an object: 
+2) As an object:
 
 ``` html
 [dragData]="{component: aComponent, location: 'component-in-bar'}"
@@ -747,8 +747,8 @@ loadComponent($event){
 
 ``` javascript
 loadComponent($event){
-    console.log($event.dragData.component); // aComponent 
-    console.log($event.dragData.location); // 'component-in-bar' OR 'component-in-designer' 
+    console.log($event.dragData.component); // aComponent
+    console.log($event.dragData.location); // 'component-in-bar' OR 'component-in-designer'
 }
 ```
 
@@ -772,7 +772,7 @@ bootstrap(AppComponent, [
     template: `
 <h4>Simple Drag-and-Drop</h4>
 <div class="row">
-   
+
     <div class="col-sm-3">
         <div dnd-droppable class="panel panel-info"
             (onDropSuccess)="transferDataSuccess($event)">>
@@ -800,20 +800,20 @@ export class AppComponent {
     // loading the FileList from the dataTransfer
     let dataTransfer: DataTransfer = $event.mouseEvent.dataTransfer;
     if (dataTransfer && dataTransfer.files) {
-      
+
       // needed to support posting binaries and usual form values
       let headers = new Headers();
       headers.append('Content-Type', 'multipart/form-data');
 
       let files: FileList = dataTransfer.files;
-  
+
       // uploading the files one by one asynchrounusly
       for (let i = 0; i < files.length; i++) {
         let file: File = files[i];
-  
+
         // just for debugging
         console.log('Name: ' + file.name + '\n Type: ' + file.type + '\n Size: ' + file.size + '\n Date: ' + file.lastModifiedDate);
-  
+
         // collecting the data to post
         var data = new FormData();
         data.append('file', file);
@@ -821,7 +821,7 @@ export class AppComponent {
         data.append('fileSize', file.size);
         data.append('fileType', file.type);
         data.append('fileLastMod', file.lastModifiedDate);
-  
+
         // posting the data
         this._http
           .post(attachmentUploadUrl, data, {
