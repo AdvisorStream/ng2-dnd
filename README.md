@@ -1,12 +1,7 @@
-# Angular 2 Drag-and-Drop [![npm version](https://badge.fury.io/js/ng2-dnd.svg)](https://badge.fury.io/js/ng2-dnd) [![npm monthly downloads](https://img.shields.io/npm/dm/ng2-dnd.svg?style=flat-square)](https://www.npmjs.com/package/ng2-dnd)
+**Fork of [akserg/ng2-dnd](https://github.com/akserg/ng2-dnd) updated for Angular 8. Will not be actively maintained beyond version updates.**
+
+# Angular 2 Drag-and-Drop
 Angular 2 Drag-and-Drop without dependencies.
-
-Follow me [![twitter](https://img.shields.io/twitter/follow/akopkokhyants.svg?style=social&label=%20akopkokhyants)](https://twitter.com/akopkokhyants) to be notified about new releases.
-
-[![Build Status](https://travis-ci.org/akserg/ng2-dnd.svg?branch=master)](https://travis-ci.org/akserg/ng2-dnd)
-[![Dependency Status](https://david-dm.org/akserg/ng2-dnd.svg)](https://david-dm.org/akserg/ng2-dnd)
-[![devDependency Status](https://david-dm.org/akserg/ng2-dnd/dev-status.svg)](https://david-dm.org/akserg/ng2-dnd#info=devDependencies)
-[![Known Vulnerabilities](https://snyk.io/test/github/akserg/ng2-dnd/badge.svg)](https://snyk.io/test/github/akserg/ng2-dnd)
 
 _Some of these APIs and Components are not final and are subject to change!_
 
