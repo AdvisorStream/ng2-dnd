@@ -32,8 +32,8 @@
   "typings": "./ng2-dnd.d.ts",
   "homepage": "https://github.com/AdvisorStream/ng2-dnd#readme",
   "peerDependencies": {
-    "@angular/core": "~8.2.14",
-    "@angular/forms": "~8.2.14"
+    "@angular/core": "^8.2.14",
+    "@angular/forms": "^8.2.14"
   },
   "devDependencies": {
     "@angular/animations": "~8.2.14",
